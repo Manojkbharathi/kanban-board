@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <title>Static HTML-CSS-JavaScript Projects</title>
+
+    <!-- FontAwesome CDN  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- normalize css -->
+    <link rel="stylesheet" href="./styles/normalize.css" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <form id="form">
+      <h2 class="head">Kanban Board</h2>
+      <input class="input" id="input" type="text" />
+      <button class="submit" type="submit">Add</button>
+    </form>
+    <div class="board">
+      <div id="todo" class="choice">
+        <h3 class="title">Todo</h3>
+
+        <div class="content">
+          <ul id="todo-list" class="todo-list done"></ul>
+        </div>
+      </div>
+      <div id="in-progress" class="choice">
+        <h3 class="title">Doing</h3>
+
+        <div class="content">
+          <ul class="doing done" id="todo-list"></ul>
+        </div>
+      </div>
+      <div id="done" class="choice">
+        <h3 class="doneTitle">Done</h3>
+
+        <div class="content">
+          <ul class="done" id="todo-list"></ul>
+        </div>
+      </div>
+    </div>
+    <!-- custom js -->
+    <script src="./script.js"></script>
+  </body>
+</html>
